@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Şəxsi Veb-Sayt</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -12,24 +20,24 @@
         <p class="fade-in">Web Developer | IT Enthusiast</p>
         <nav>
             <ul>
-                <li><a href="#about">Haqqımda</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Əlaqə</a></li>
+                <li><a href="#" onclick="showSection('about')">Haqqımda</a></li>
+                <li><a href="#" onclick="showSection('portfolio')">Portfolio</a></li>
+                <li><a href="#" onclick="showSection('contact')">Əlaqə</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="about" class="section">
+    <section id="about" class="section" style="display: none;">
         <h2>Haqqımda</h2>
         <p>Burada özünüz haqqında məlumat yaza bilərsiniz.</p>
     </section>
     
-    <section id="portfolio" class="section">
+    <section id="portfolio" class="section" style="display: none;">
         <h2>Portfolio</h2>
         <p>Layihələrinizi burada paylaşa bilərsiniz.</p>
     </section>
     
-    <section id="contact" class="section">
+    <section id="contact" class="section" style="display: none;">
         <h2>Əlaqə</h2>
         <form>
             <input type="text" placeholder="Adınız" required>
@@ -37,6 +45,14 @@
             <textarea placeholder="Mesajınız" required></textarea>
             <button type="submit" class="btn">Göndər</button>
         </form>
+        <div class="social-icons">
+            <a href="https://facebook.com/thisissenan" target="_blank">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com/senanmusazadeh" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+        </div>
     </section>
     
     <footer>

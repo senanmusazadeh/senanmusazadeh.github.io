@@ -1,62 +1,169 @@
 <!DOCTYPE html>
 <html lang="az">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Şəxsi Veb-Sayt</title>
-    <link rel="stylesheet" href="style.css">
-    <script>
-        function showSection(sectionId) {
-            document.querySelectorAll('.section').forEach(section => {
-                section.style.display = 'none';
-            });
-            document.getElementById(sectionId).style.display = 'block';
-        }
-    </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Senan Musazadeh – Personal Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1 class="fade-in">Adınız</h1>
-        <p class="fade-in">Web Developer | IT Enthusiast</p>
-        <nav>
-            <ul>
-                <li><a href="#" onclick="showSection('about')">Haqqımda</a></li>
-                <li><a href="#" onclick="showSection('portfolio')">Portfolio</a></li>
-                <li><a href="#" onclick="showSection('contact')">Əlaqə</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <section id="about" class="section" style="display: none;">
-        <h2>Haqqımda</h2>
-        <p>Burada özünüz haqqında məlumat yaza bilərsiniz.</p>
-    </section>
-    
-    <section id="portfolio" class="section" style="display: none;">
-        <h2>Portfolio</h2>
-        <p>Layihələrinizi burada paylaşa bilərsiniz.</p>
-    </section>
-    
-    <section id="contact" class="section" style="display: none;">
-        <h2>Əlaqə</h2>
-        <form>
-            <input type="text" placeholder="Adınız" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mesajınız" required></textarea>
-            <button type="submit" class="btn">Göndər</button>
-        </form>
-        <div class="social-icons">
-            <a href="https://facebook.com/thisissenan" target="_blank">
-                <img src="facebook-icon.png" alt="Facebook">
-            </a>
-            <a href="https://instagram.com/senanmusazadeh" target="_blank">
-                <img src="instagram-icon.png" alt="Instagram">
-            </a>
+  <!-- Header / Banner -->
+  <header class="banner">
+    <div class="container">
+      <img src="https://i.imghippo.com/files/opCb3576GlM.jpg" alt="Profile Picture" class="profile-pic">
+      <h1>Senan Musazadeh</h1>
+      <p class="tagline">Founder of Boomstrick, Software Architect, AI Researcher and Automation Engineer (Intern)</p>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section class="about container">
+    <h2>About</h2>
+    <p>
+      I am a passionate technology enthusiast and automation engineer with hands-on experience in AI research, web development, and industrial automation. 
+      As the founder of <strong>Boomstrick</strong>, I lead innovative projects and foster tech communities, while also gaining practical expertise through my internships at <strong>SOCAR Türkiye</strong> and <strong>SOCAR Downstream</strong>. 
+      I excel at designing scalable digital solutions, solving complex technical challenges, and driving impactful results across software and automation domains.
+    </p>
+  </section>
+
+  <!-- Experience -->
+  <section class="experience container">
+    <h2>Experience</h2>
+
+    <div class="card">
+      <div class="card-header">
+        <img src="https://stprodwebsitewe.blob.core.windows.net/socar/scr-logo.jpg" alt="SOCAR Türkiye Logo" class="logo">
+        <div>
+          <h3>I&C and Automation Intern</h3>
+          <p><strong>SOCAR Türkiye</strong> — August 9–September 5, 2025 (a month)</p>
         </div>
-    </section>
-    
-    <footer>
-        <p>&copy; 2024 Adınız. Bütün hüquqlar qorunur.</p>
-    </footer>
+      </div>
+      <p>Operation/Industrial Automation (Izmir, Türkiye)</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <img src="https://stprodwebsitewe.blob.core.windows.net/socar/scr-logo.jpg" alt="SOCAR Downstream Logo" class="logo">
+        <div>
+          <h3>I&C and Automation Intern</h3>
+          <p><strong>SOCAR Downstream</strong> — July 9–August 9, 2025 (a month)</p>
+        </div>
+      </div>
+      <p>Secondary field in I&C and Automation (Baku, Azerbaijan)</p>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <img src="https://scontent.fgyd3-1.fna.fbcdn.net/v/t39.30808-1/264942822_107828781752747_9092761249004037165_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=107&ccb=1-7&_nc_sid=2d3e12&_nc_ohc=DUkbOafo9KgQ7kNvwEpJd1s&_nc_oc=AdksYGV6JjhgfMfCyrblCGgjNiobyLfm4zgqiKUZLY3fGJ7s5ApGAq4x15Y6wJ9yjGg&_nc_zt=24&_nc_ht=scontent.fgyd3-1.fna&_nc_gid=HJaAja_pjNjhw6cK55HSHQ&oh=00_AfY8IWwYMpyjh3JHoaXcgv_aqskCTvzya6oAE2vlQ_8RdA&oe=68C34947" alt="Boomstrick Logo" class="logo">
+        <div>
+          <h3>Founder</h3>
+          <p><strong>Boomstrick</strong> — December 12, 2021–present (3 years)</p>
+        </div>
+      </div>
+      <p>Web apps & games, AI projects and communities - UNIT</p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section class="education container">
+    <h2>Education</h2>
+    <div class="card">
+      <div class="card-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/SDU-loqo.jpg" alt="Sumgait State University Logo" class="logo">
+        <div>
+          <h3>Sumgait State University</h3>
+          <p><strong>Process Automation Engineering</strong></p>
+          <p>2022 – present</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills container">
+    <h2>Skills</h2>
+    <ul>
+      <li><span>Digital Solution</span> <div class="bar"><div class="level" style="width: 95%"></div></div></li>
+      <li><span>AI Researching</span> <div class="bar"><div class="level" style="width: 90%"></div></div></li>
+      <li><span>Microsoft Office</span> <div class="bar"><div class="level" style="width: 60%"></div></div></li>
+      <li><span>Web Programming</span> <div class="bar"><div class="level" style="width: 50%"></div></div></li>
+      <li><span>IT & Networking</span> <div class="bar"><div class="level" style="width: 40%"></div></div></li>
+    </ul>
+  </section>
+  
+    <!-- Languages -->
+  <section class="languages container">
+    <h2>Languages</h2>
+    <ul>
+      <li><strong>English</strong> — Professional Working Proficiency</li>
+      <li><strong>Turkish</strong> — Professional Working Proficiency</li>
+    </ul>
+  </section>
+
+
+  <!-- Certifications -->
+  <section class="certifications container">
+    <h2>Certifications</h2>
+    <div class="card">
+      <div class="card-header">
+        <img src="https://aipaturkey.org/uploads/fm/Ekran_Resmi_2024-08-28_17_19_09.jpg" alt="Coursera Logo" class="logo">
+        <div>
+          <h3>AI Tomorrow Summit (Participation)</h3>
+          <p><strong>AIPA Turkey</strong> — 2023</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <img src="https://img-c.udemycdn.com/user/200_H/225034806_bff9_10.jpg" alt="Udemy Logo" class="logo">
+        <div>
+          <h3>Building A Website</h3>
+          <p><strong>Programming Hub (Sponsored by Google Developers)</strong> — 2021</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volunteer -->
+  <section class="volunteer container">
+    <h2>Volunteer Activity</h2>
+    <div class="card">
+      <div class="card-header">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/ASAN_service_center.jpg/640px-ASAN_service_center.jpg" alt="Hackathon Logo" class="logo">
+        <div>
+          <h3>Volunteer</h3>
+          <p><strong>ASAN Service</strong> — August 15–October 15, 2024 (2 months)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact container">
+    <h2>Contact</h2>
+    <div class="contact-cards">
+      <div class="contact-card">
+        <a href="https://facebook.com/thisissenan"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook Logo" class="logo"></a>
+        <p>Facebook</p>
+      </div>
+      <div class="contact-card">
+        <a href="https://instagram.com/senanmusazadeh"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram Logo" class="logo"></a>
+        <p>Instagram</p>
+      </div>
+      <div class="contact-card">
+        <a href="https://x.com/vrtvz"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023_original.svg/300px-X_logo_2023_original.svg.png?20230728155658" alt="X Logo" class="logo"></a>
+        <p>X</p>
+      </div>
+      <div class="contact-card">
+        <a href="mailto:senan@example.com"><img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Mail_%28iOS%29.svg" alt="Email Logo" class="logo"></a>
+        <p>Email</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    © 2025 Senan Musazadeh — Personal Website
+  </footer>
 </body>
 </html>
